@@ -29,6 +29,10 @@ nav ul.navigation li a {
   color: black;
 }
 
+.menu .navigation li:hover a {
+  font-weight: var(--fw-medium);
+}
+
 nav ul.social-links {
   display: flex;
   align-items: center;
@@ -147,8 +151,4 @@ body.menu-active .menu .navigation li {
 
 body.menu-active .menu .navigation li:nth-child(1) {
   border-top: 1px solid black;
-}
-
-body.menu-active .menu .navigation li:hover a {
-  font-weight: var(--fw-medium);
 }

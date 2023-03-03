@@ -5,7 +5,7 @@
 }
 
 @media (max-width: 1410px) {
-  nav .menu .navigation {
+  nav .menu .social-links {
     display: none;
   }
 }
