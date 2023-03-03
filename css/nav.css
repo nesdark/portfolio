@@ -1,0 +1,154 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 4rem 11.7rem;
+}
+
+nav .logo {
+  font-size: clamp(2.5rem, 1rem + 2vw, 4rem);
+}
+
+nav .menu {
+  display: flex;
+  align-items: center;
+  gap: 22.7rem;
+}
+
+nav ul.navigation {
+  display: flex;
+  gap: 12.2rem;
+}
+
+nav ul.navigation li a {
+  font-weight: var(--fw-regular);
+  font-size: 2rem;
+  line-height: 2.5rem;
+
+  color: black;
+}
+
+nav ul.social-links {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+}
+
+nav ul.social-links a {
+  border: 1px solid black;
+  border-radius: 50%;
+
+  padding: clamp(1.2rem, 1rem + 1vw, 2.2rem);
+
+  transition: 300ms;
+  cursor: pointer;
+}
+
+nav ul.social-links a:nth-child(2) {
+  border: 1px solid var(--linkedin-color);
+}
+
+nav ul.social-links svg {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+nav ul.social-links a:hover {
+  background-color: black;
+}
+
+nav ul.social-links a:nth-child(2):hover {
+  background-color: var(--linkedin-color);
+}
+
+nav ul.social-links a:hover svg path {
+  fill: white;
+}
+
+nav .connect {
+  margin-left: 1.6rem;
+}
+
+nav .toggle-menu {
+  display: none;
+
+  background: none;
+  border: none;
+
+  width: 4rem;
+  cursor: pointer;
+}
+
+nav .toggle-menu .bar {
+  width: 3.5rem;
+  height: 0.3rem;
+  background-color: rgb(32, 32, 32);
+  margin: 0.5rem auto;
+  border-radius: 2px;
+
+  transition: all 300ms;
+}
+
+body.menu-active .toggle-menu {
+  transform: translateX(-6px) translateY(4px);
+}
+
+body.menu-active .toggle-menu .bar:nth-child(1) {
+  transform: rotate(45deg) translate(11px);
+}
+
+body.menu-active .toggle-menu .bar:nth-child(2) {
+  opacity: 0;
+}
+
+body.menu-active .toggle-menu .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(10px);
+}
+
+/* When Menu is Open */
+
+body.menu-active > *:not(nav) {
+  display: none;
+}
+
+body.menu-active .menu,
+body.menu-active .menu .navigation {
+  display: flex;
+}
+
+body.menu-active .menu {
+  flex-direction: column;
+
+  height: 100vh;
+  width: 100vw;
+
+  position: absolute;
+  top: 12rem;
+  left: 0;
+
+  z-index: 10;
+}
+
+body.menu-active .menu .navigation {
+  flex-direction: column;
+  gap: 0;
+}
+
+body.menu-active .menu .navigation li {
+  width: 100vw;
+
+  padding: 1.6rem 3.2rem;
+
+  border-bottom: 1px solid black;
+
+  cursor: pointer;
+}
+
+body.menu-active .menu .navigation li:nth-child(1) {
+  border-top: 1px solid black;
+}
+
+body.menu-active .menu .navigation li:hover a {
+  font-weight: var(--fw-medium);
+}

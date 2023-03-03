@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --linkedin-color: #0a3586;
+  --light-gray: #d9d9d9;
+
+  --ff-primary: 'Lexend', sans-serif;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+}
+
+body * {
+  font-family: var(--ff-primary);
+}
+
+button.connect {
+  background: var(--light-gray);
+
+  padding: 1.8rem 2.3rem;
+
+  border: none;
+  border-radius: 1.1rem;
+
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+
+  color: black;
+
+  transition: 300ms;
+  cursor: pointer;
+}
+
+button.connect:hover {
+  filter: brightness(1.1);
+  transform: scale(1.1);
+}

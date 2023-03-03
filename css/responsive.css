@@ -1,0 +1,21 @@
+@media (max-width: 1604px) {
+  nav button.connect {
+    display: none;
+  }
+}
+
+@media (max-width: 1410px) {
+  nav .menu .navigation {
+    display: none;
+  }
+}
+
+@media (max-width: 924px) {
+  nav .menu {
+    display: none;
+  }
+
+  nav .toggle-menu {
+    display: block;
+  }
+}
