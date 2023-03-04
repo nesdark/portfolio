@@ -3,7 +3,7 @@ nav {
   justify-content: space-between;
   align-items: center;
 
-  padding: 4rem 11.7rem;
+  padding: 4rem clamp(3.2rem, 2rem + 3vw, 11.7rem);
 }
 
 nav .logo {
@@ -95,7 +95,7 @@ nav .toggle-menu .bar {
 }
 
 body.menu-active .toggle-menu {
-  transform: translateX(-6px) translateY(4px);
+  transform: translateX(-6px);
 }
 
 body.menu-active .toggle-menu .bar:nth-child(1) {
@@ -111,6 +111,10 @@ body.menu-active .toggle-menu .bar:nth-child(3) {
 }
 
 /* When Menu is Open */
+
+body.menu-active {
+  overflow: hidden;
+}
 
 body.menu-active > *:not(nav) {
   display: none;
@@ -142,7 +146,7 @@ body.menu-active .menu .navigation {
 body.menu-active .menu .navigation li {
   width: 100vw;
 
-  padding: 1.6rem 3.2rem;
+  padding: 1.6rem clamp(3.2rem, 2rem + 3vw, 11.7rem);
 
   border-bottom: 1px solid black;
 
