@@ -3,7 +3,7 @@ nav {
   justify-content: space-between;
   align-items: center;
 
-  padding: 4rem clamp(3.2rem, 2rem + 3vw, 11.7rem);
+  padding: 4rem 0;
 }
 
 nav .logo {

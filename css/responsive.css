@@ -1,5 +1,11 @@
+@media (min-width: 1949px) {
+  .wrapper {
+    margin-inline: auto;
+  }
+}
+
 @media (max-width: 1604px) {
-  nav button.connect {
+  nav .connect {
     display: none;
   }
 }
@@ -17,5 +23,14 @@
 
   nav .toggle-menu {
     display: block;
+  }
+
+  header {
+    flex-direction: column;
+  }
+
+  header svg {
+    width: 34rem;
+    height: 34rem;
   }
 }
