@@ -31,6 +31,10 @@
   --fw-semibold: 600;
 }
 
+body {
+  overflow: overlay;
+}
+
 body * {
   font-family: var(--ff-primary);
 }
