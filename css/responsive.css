@@ -5,7 +5,7 @@
 }
 
 @media (max-width: 1604px) {
-  nav .connect {
+  nav .button {
     display: none;
   }
 }
@@ -16,7 +16,12 @@
   }
 }
 
-@media (max-width: 924px) {
+@media (max-width: 768px) {
+  .side-by-side {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
   nav .menu {
     display: none;
   }
@@ -25,12 +30,14 @@
     display: block;
   }
 
-  header {
-    flex-direction: column;
-  }
-
   header svg {
     width: 34rem;
     height: 34rem;
+  }
+}
+
+@media (max-width: 592px) {
+  .divider {
+    width: 50vw;
   }
 }

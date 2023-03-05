@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./css/nav.css" />
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="stylesheet" href="./css/main.css" />
 
     <script src="./js/index.js" defer type="module"></script>
   </head>
@@ -111,18 +112,18 @@
         <div class="bar"></div>
       </button>
 
-      <a href="mailto:nesd4rkfocus@gmail.com" class="connect">Contate-me</a>
+      <a href="mailto:nesd4rkfocus@gmail.com" class="button">Contate-me</a>
     </nav>
-    <header class="wrapper">
+    <header class="wrapper side-by-side">
       <section>
         <div class="container">
-          <h3>Seja bem-vindo ao meu portfólio</h3>
+          <p>Seja bem-vindo ao meu portfólio</p>
           <h2>
             Olá! Sou um <br />
             desenvolvedor web
           </h2>
         </div>
-        <a href="mailto:nesd4rkfocus@gmail.com" class="connect">Contate-me</a>
+        <a href="mailto:nesd4rkfocus@gmail.com" class="button">Contate-me</a>
       </section>
       <svg
         width="787"
@@ -557,5 +558,88 @@
         </defs>
       </svg>
     </header>
+    <div class="divider"></div>
+    <main class="wrapper">
+      <section id="about">
+        <h2>Sobre mim</h2>
+
+        <div class="side-by-side">
+          <img src="./public/photo.png" alt="Christian's photo" />
+          <div class="about-text">
+            <p>
+              Sou Christian Perez, desenvolvedor web focado em front-end com
+              habilidades em JavaScript, HTML e CSS. Estou aprimorando minhas
+              habilidades em back-end, ReactJS, Vite e testes automatizados.
+              Procuro oportunidades para aplicar meus conhecimentos em projetos
+              desafiadores, criar interfaces interativas e elegantes para
+              usuários, e solucionar problemas complexos.
+            </p>
+            <a href="#" class="button">
+              Baixar currículo
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12 8.5V14.5"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M9 12.5L12 15.5L15 12.5"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+      <div class="divider"></div>
+      <section id="projects">
+        <h2>Projetos</h2>
+        <div class="projects">
+          <div class="project">
+            <a href="https://nesdark.github.io/pomodoro-v2/">
+              <img src="./public/pomodoro-v2.png" alt="Pomodoro project" />
+            </a>
+          </div>
+          <div class="project">
+            <a href="https://nesdark.github.io/market-list/">
+              <img src="./public/market-list.png  " alt="Pomodoro project" />
+            </a>
+          </div>
+          <div class="project">
+            <a href="https://nesdark.github.io/expense-chart/">
+              <img src="./public/expense-chart.png" alt="Pomodoro project" />
+            </a>
+          </div>
+          <div class="project">
+            <a href="https://nesdark.github.io/bmi-calculator/">
+              <img src="./public/bmi-calculator.png" alt="Pomodoro project" />
+            </a>
+          </div>
+          <div class="project">
+            <a href="https://github.com/nesdark/spa-universe">
+              <img src="./public/pomodoro-v2.png" alt="Pomodoro project" />
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
