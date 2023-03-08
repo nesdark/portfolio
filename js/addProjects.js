@@ -18,7 +18,6 @@ function addProject(alternativeName, projectName, technologies) {
 
 function makeTechnologies(technologies) {
   let technologiesSet = '';
-  console.log(technologies);
   technologies.forEach((technology) => {
     technologiesSet += `
       <li class="${technology}">

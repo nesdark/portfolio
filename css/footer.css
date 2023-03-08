@@ -1,0 +1,42 @@
+footer {
+  display: flex;
+  justify-content: center;
+
+  padding-bottom: 15rem;
+
+  margin-top: 17rem;
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+footer ul.social-links {
+  gap: 3.9rem;
+}
+
+footer .rectangle {
+  position: absolute;
+  width: 617px;
+  height: 474px;
+
+  background: linear-gradient(
+    180deg,
+    #e4ca3f -10%,
+    rgba(29, 151, 129, 0.253) 70%
+  );
+
+  border-radius: min(12.5rem, 10vw);
+}
+
+footer .rectangle.left {
+  right: 75.6vw;
+  top: 12rem;
+  opacity: 1;
+}
+
+footer .rectangle.right {
+  left: 75.6vw;
+  top: 17rem;
+  opacity: 1;
+}

@@ -1,6 +1,9 @@
+const body = document.body;
 export const Menu = {
   toggle() {
-    const body = document.body;
     body.classList.toggle('menu-active');
+  },
+  hide() {
+    body.classList.remove('menu-active');
   },
 };
