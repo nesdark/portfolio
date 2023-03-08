@@ -1,9 +1,9 @@
-const body = document.body;
+const html = document.querySelector('html');
 export const Menu = {
   toggle() {
-    body.classList.toggle('menu-active');
+    html.classList.toggle('menu-active');
   },
   hide() {
-    body.classList.remove('menu-active');
+    html.classList.remove('menu-active');
   },
 };

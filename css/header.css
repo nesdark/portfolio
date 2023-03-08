@@ -2,10 +2,19 @@ header.wrapper {
   margin-top: 3rem;
 }
 
+nav.fixed + header.wrapper {
+  margin-top: calc(3rem + 11.6rem);
+}
+
 header h2 {
   width: max-content;
 
   text-align: left;
+}
+
+header img {
+  width: 100%;
+  height: 100%;
 }
 
 .divider:nth-child(1) {
