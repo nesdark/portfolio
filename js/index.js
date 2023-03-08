@@ -19,7 +19,6 @@ addLink('goToAbout', '#about');
 addLink('goToProjects', '#projects');
 
 addReveal(`
-  nav h1,
   #home section,
   #home img,
   #about h2,
