@@ -21,7 +21,9 @@ const navLinks = document.querySelectorAll('.navigation li');
 
 navLinks.forEach((link) => {
   link.addEventListener('click', (event) => {
-    Menu.toggle();
+    if (document.body.classList.contains('menu-active')) {
+      Menu.toggle();
+    }
   });
 });
 

@@ -1,5 +1,5 @@
 const scrollToTop = document.querySelector('.scroll-to-top');
-const linkHome = document.querySelector('#home');
+const linkHome = document.querySelector('#goToHome');
 
 scrollToTop.addEventListener('click', scrollToYZero);
 linkHome.addEventListener('click', scrollToYZero);

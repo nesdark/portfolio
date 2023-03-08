@@ -21,7 +21,7 @@ nav ul.navigation {
   gap: 12.2rem;
 }
 
-nav ul.navigation li a {
+nav ul.navigation a {
   font-weight: var(--fw-regular);
   font-size: 2rem;
   line-height: 2.5rem;
@@ -29,7 +29,7 @@ nav ul.navigation li a {
   color: black;
 }
 
-.menu .navigation li:hover a {
+.menu .navigation a:hover {
   font-weight: var(--fw-medium);
 }
 
@@ -80,7 +80,8 @@ body.menu-active {
 }
 
 body.menu-active > *:not(nav) {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
 }
 
 body.menu-active .menu,
@@ -108,7 +109,7 @@ body.menu-active .menu .navigation {
   gap: 0;
 }
 
-body.menu-active .menu .navigation li {
+body.menu-active .menu .navigation a {
   width: 100vw;
 
   padding: 1.6rem clamp(3.2rem, 2rem + 3vw, 11.7rem);
@@ -118,6 +119,6 @@ body.menu-active .menu .navigation li {
   cursor: pointer;
 }
 
-body.menu-active .menu .navigation li:nth-child(1) {
+body.menu-active .menu .navigation a:nth-child(1) {
   border-top: 1px solid black;
 }
